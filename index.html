@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Idade Gestacional</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <h1>Calculadora de Idade Gestacional</h1>
+    
+      <label for="dum">Data da Última Menstruação (DUM):</label>
+      <input type="date" id="dum" class="inputbottom">
+
+      <label for="us-date">Data do Primeiro Ultrassom (USG):</label>
+      <input type="date" id="us-date" class="inputbottom">
+
+      <label for="us-weeks">Idade Estimada no USG:</label>
+      <input type="number" id="us-weeks" placeholder="Semanas">
+      <input type="number" id="us-days" placeholder="Dias" class="inputbottom">
+
+      <button onclick="calcularIdadeGestacional()">Calcular Idade Gestacional</button>
+
+      <div class="result" id="result"></div>
+
+    </main>
+    <hr>
+    <footer>
+    <p>Não nos responsabilizamos por condutas tomadas a partir dos cálculos fornecidos.</p>
+    <p>Em caso de dúvidas, críticas ou sugestões, entrar em contato com calcig@proton.me </p>
+    <p>Esse site pode ser acessado em <a href="https://calculadoraig.pages.dev">calculadoraig.pages.dev</a> ou <a href="https://bit.ly/calcig">bit.ly/calcig</a></p>
+    <p class="version">Versão 1.4.1<p>
+    </footer>
+  </div>
+</body>
+</html>
